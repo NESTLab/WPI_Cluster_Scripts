@@ -8,48 +8,64 @@ For more information on the WPI Cluster, read:
 
 ## How to Use the Files ##
 
-  1. Login on the cluster using `ssh`
+1. Login on the cluster using `ssh`
 
-        $ ssh myuser@turing.wpi.edu
+   ```bash
+   $ ssh myuser@turing.wpi.edu
+   ```
     
-  2. Clone this repository
-  
-        $ git clone https://github.com/NESTLab/WPI_Cluster_Scripts.git
+2. Clone this repository
+
+   ```bash
+   $ git clone https://github.com/NESTLab/WPI_Cluster_Scripts.git
+   ```
 
 ### User Configuration ###
 
 To configure your user to work with the cluster, you need to set up a
 few environment variables. Start by executing this command:
 
-        $ cp ~/WPI_Cluster_Scripts/bash_profile ~/.bash_profile
+```bash
+$ cp ~/WPI_Cluster_Scripts/bash_profile ~/.bash_profile
+```
 
 If you plan on using ARGoS and Buzz, execute this command:
 
-        $ cp ~/WPI_Cluster_Scripts/bashrc_argos_buzz ~/.bashrc
+```bash
+$ cp ~/WPI_Cluster_Scripts/bashrc_argos_buzz ~/.bashrc
+```
 
 If you plan on using only ARGoS, the above command works, but if you
 want less clutter in your environment variables, execute this instead:
 
-        $ cp ~/WPI_Cluster_Scripts/bashrc_argos ~/.bashrc
+```bash
+$ cp ~/WPI_Cluster_Scripts/bashrc_argos ~/.bashrc
+```
 
 If you don't plan on using ARGoS at all, it's safe to use this
 instead:
 
-        $ cp ~/WPI_Cluster_Scripts/bashrc ~/.bashrc
+```bash
+$ cp ~/WPI_Cluster_Scripts/bashrc ~/.bashrc
+```
 
 ### Installing and Updating ARGoS ###
 
 To install or update ARGoS, execute the `make_argos3_bundle.sh` script
 in your home directory:
 
-        $ ./WPI_Cluster_Scripts/make_argos3_bundle.sh
+```bash
+$ ./WPI_Cluster_Scripts/make_argos3_bundle.sh
+```
 
 ### Installing or Updating Buzz ###
 
 To install or Update Buzz, execute the `make_buzz_bundle.sh` script in
 your home directory:
 
-        $ ./WPI_Cluster_Scripts/make_buzz_bundle.sh
+```bash
+$ ./WPI_Cluster_Scripts/make_buzz_bundle.sh
+```
 
 ### Using the Cluster Scripts ###
 
