@@ -35,6 +35,10 @@ export PATH=$PATH:$HOME/argos3bundle/bin
 # (Adapt this to your needs)
 DATADIR=~/data
 
+# Path to the file template.argos
+# (Adapt this to your needs)
+TEMPLATE=~/experiments/myexperiment.argos
+
 
 
 ########################################
@@ -54,7 +58,7 @@ THISJOB=${PARAM1}_${PARAM2}
 
 # Job working directory
 # (Don't change this)
-WORKDIR=$LOCALDIR/$MYUSER/$THISJOB
+WORKDIR=${LOCALDIR}/${MYUSER}/${THISJOB}
 
 
 
@@ -82,7 +86,6 @@ trap cleanup EXIT SIGINT SIGTERM
 
 # Create .argos file from template in home directory
 # (Change this to reflect the job parameters)
-TEMPLATE=~/experiments/myexperiment.argos
 sed -e "s|PARAM1|${PARAM1}|g" \
     -e "s|PARAM2|${PARAM2}|g" \
     $TEMPLATE > experiment.argos
