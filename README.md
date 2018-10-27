@@ -67,6 +67,15 @@ your home directory:
 $ ./WPI_Cluster_Scripts/make_buzz_bundle.sh
 ```
 
+### Installing and Updating the KheperaIV Plugin ###
+
+To install or update ARGoS, execute the `make_argos3_kheperaiv_bundle.sh` script
+in your home directory:
+
+```bash
+$ ./WPI_Cluster_Scripts/make_argos3_kheperaiv_bundle.sh
+```
+
 ### Using the Cluster Scripts ###
 
 Depending on what you need to run, three script skeletons are
